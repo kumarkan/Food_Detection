@@ -1,3 +1,4 @@
+![Screenshot](output_MFE8LS.gif)
 # Food_Detection
 Food detection using Tensorflow Object Detection API
 
