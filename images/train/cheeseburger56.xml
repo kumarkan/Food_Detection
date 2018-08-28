@@ -1,0 +1,26 @@
+<annotation>
+	<folder>cheeseburger</folder>
+	<filename>cheeseburger56.jpg</filename>
+	<path>C:\Development\movidius\objectdetection\cheeseburger\cheeseburger56.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>300</width>
+		<height>300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cheeseburger</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>25</xmin>
+			<ymin>71</ymin>
+			<xmax>269</xmax>
+			<ymax>285</ymax>
+		</bndbox>
+	</object>
+</annotation>
