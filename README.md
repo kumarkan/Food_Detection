@@ -51,6 +51,21 @@ cd ..
 cd ..
 ```
 
+```bash
+Note: If you're getting errors while compiling, you might be using an incompatible protobuf compiler. If that's the case, use the following manual installation
+
+Manual protobuf-compiler installation and usage
+Download and install the 3.0 release of protoc, then unzip the file.
+
+From tensorflow/models/research/ --> 
+wget -O protobuf.zip https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip
+unzip protobuf.zip
+Run the compilation process again, but use the downloaded version of protoc
+
+From tensorflow/models/research/ -->
+./bin/protoc object_detection/protos/*.proto --python_out=.
+```
+
 4. Launch Jupyter
 ```bash
 jupyter notebook
