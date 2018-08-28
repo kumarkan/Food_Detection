@@ -1,5 +1,5 @@
 # Modified From API
-# https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
+# https://github.com/wagonhelm/TF_ObjectDetection_API/blob/master/ChessObjectDetection.ipynb
 
 import skimage
 import numpy as np
