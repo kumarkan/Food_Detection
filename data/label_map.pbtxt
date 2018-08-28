@@ -1,0 +1,9 @@
+item {
+  id: 1
+  name: 'cheeseburger_475cal'
+}
+
+item {
+  id: 2
+  name: 'fries_350cal'
+}
