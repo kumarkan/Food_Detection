@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+pillow
+scikit-image
+jupyter
+pandas
+lxml
