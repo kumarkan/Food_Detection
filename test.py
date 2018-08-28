@@ -68,16 +68,15 @@ with detection_graph.as_default():
     detection_scores = detection_graph.get_tensor_by_name('detection_scores:0')
     detection_classes = detection_graph.get_tensor_by_name('detection_classes:0')
     num_detections = detection_graph.get_tensor_by_name('num_detections:0')
-    video_capture = WebcamVideoStream(src=0,
+    
+    #src=0 --> /dev/video0. change src number according to your video node
+    video_capture = WebcamVideoStream(src=0, 
                                       width=720,
                                       height=480).start()
     fps = FPS().start()
-    i = 0
     while(True):
       frame =  video_capture.read()
       frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
-
       image_np_expanded = np.expand_dims(frame_rgb, axis=0)
       # Actual detection.
       (boxes, scores, classes, num) = sess.run(
@@ -96,11 +95,7 @@ with detection_graph.as_default():
           line_thickness=2)
       
       output_rgb = cv2.cvtColor(frame_rgb, cv2.COLOR_RGB2BGR)
-
       cv2.imshow('Object Detection', output_rgb)
-      if i < 100:
-        cv2.imwrite('cap'+str(i)+'.jpg', output_rgb)
-      i = i+1
       fps.update()
       if cv2.waitKey(1) & 0xFF == ord('q'):
       	break
