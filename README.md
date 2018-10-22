@@ -4,7 +4,7 @@ Food detection using Tensorflow Object Detection API
 
 [Instructions are adapted from https://github.com/wagonhelm/TF_ObjectDetection_API/blob/master/README.md ]
 
-## Required Packages
+## Required Packages [system requirements]
 * [TensorFlow v1.3](http://www.tensorflow.org/)
 * [Jupyter](http://jupyter.org/)
 * [NumPy](http://www.numpy.org/)
