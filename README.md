@@ -26,7 +26,7 @@ sudo apt-get install -y git-core wget protobuf-compiler
 git clone https://github.com/kumarkan/Food_Detection.git
 ```
 
-3. Install Python Requirement
+3. Install Python Requirement. Make use of requirements.txt file
 
 ```bash
 cd Food_Detection

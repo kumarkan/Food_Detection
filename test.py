@@ -1,3 +1,4 @@
+# Author : Anil Kumar (anil912001@gmail.com)
 # Modified From API
 # https://github.com/wagonhelm/TF_ObjectDetection_API/blob/master/ChessObjectDetection.ipynb
 
